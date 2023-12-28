@@ -29,8 +29,14 @@ describe("mockGPT", () => {
         expect(sizeMappingBuilder).to.equal(sizeMappingBuilder2);
         const mapping = sizeMappingBuilder2.build();
         expect(mapping).to.eql([
-            [[1024, 768], [970, 250]],
-            [[980, 690], [728, 90]],
+            [
+                [1024, 768],
+                [970, 250]
+            ],
+            [
+                [980, 690],
+                [728, 90]
+            ],
             [[640, 480], "fluid"]
         ]);
     });
